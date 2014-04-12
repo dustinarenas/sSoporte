@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo de Requerimiento:</strong>
+  <%= @ticket.titulo %>
+</p>
+
+<p>
+  <strong>Espesifique Requerimiento:</strong>
+  <%= @ticket.subTitulo %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @ticket.estado %>
+</p>
+
+<p>
+  <strong>Asignado a :</strong>
+  <%= @ticket.asignado %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @ticket.comentario %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
